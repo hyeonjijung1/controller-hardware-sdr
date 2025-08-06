@@ -6,6 +6,19 @@ _Led a 3-person team and delivered the Technical Review Presentation as Team Lea
 A high-performance hardware controller built for **Software-Defined Radio (SDR)** systems, integrating **Local Oscillator (LO) generation**, **TX/RX control**, and a **user interface** to support modular, high-accuracy signal processing.
 
 ---
+## Table of Contents
+
+- [Project Summary](#project-summary)  
+- [Key Contributions & Impact](#key-contributions--impact)  
+- [Getting Started](#getting-started)
+- [Repo Structure](#repo-structure) 
+- [Architecture](#architecture)  
+- [PCB Design & Schematics](#pcb-design--schematics)  
+- [Supporting Materials](#supporting-materials)  
+- [What We Learned](#what-we-learned)  
+- [Contact & Contributors](#contact--contributors)
+
+---
 
 ## Project Summary
 
@@ -86,7 +99,11 @@ Controller-Hardware-for-SDR-Local-Oscillator-User-Interface/
 ![Block Diagram](https://github.com/hyeonjijung1/Past_Project/blob/main/Screenshot%202025-03-08%20204710.png)
 *Figure 1. Subsystem C SDR Block Diagram.*
 
-### PCB Design:
+---
+
+## PCB Design & Schematics 
+
+### PCB Design 
 
 - **3D View:**  
   ![PCB 3D](https://github.com/hyeonjijung1/Past_Project/blob/main/Screenshot%202025-03-07%20235401.png)
@@ -95,9 +112,11 @@ Controller-Hardware-for-SDR-Local-Oscillator-User-Interface/
 - **Bottom View:**  
   ![PCB Bottom](https://github.com/hyeonjijung1/Past_Project/blob/main/Screenshot%202025-03-07%20235332.png)
 
-### Schematic:
+### Schematics 
 
 ![Altium Schematic](https://github.com/hyeonjijung1/Past_Project/blob/main/Screenshot%202025-03-08%20003007.png)
+
+---
 
 ## Supporting Materials
 
@@ -107,6 +126,8 @@ Controller-Hardware-for-SDR-Local-Oscillator-User-Interface/
 - 🎤 [OP1 General Audience Slides (PDF)](https://github.com/hyeonjijung1/Past_Project/raw/main/Team4C_OP1_Slides.pdf)  
 - 🎤 [OP2 General Audience Slides (PDF)](https://github.com/hyeonjijung1/Past_Project/raw/main/Team4C_OP2_Slides.pdf)  
 
+---
+
 ## What We Learned
 
 - Orchestrating multi-protocol I/O (I²C + UART + GPIO) on a constrained MCU  
@@ -114,6 +135,8 @@ Controller-Hardware-for-SDR-Local-Oscillator-User-Interface/
 - ICD-driven design: enforcing electrical & mechanical interface specs across teams  
 - PCB routing strategies to isolate analog/RF from noisy digital sections  
 - Leadership: coordinating cross-functional goals, documentation, and presentations under deadline  
+
+---
 
 ## Contact & Contributors
 

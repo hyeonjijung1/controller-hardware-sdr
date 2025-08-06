@@ -115,7 +115,7 @@ Controller-Hardware-for-SDR-Local-Oscillator-User-Interface/
 
 | 3D PCB Render                                | Top View                                  | Bottom View                                   |
 |:---------------------------------------------:|:------------------------------------------:|:----------------------------------------------:|
-| ![3D PCB Render](images/3D_PCB_render.png)    | ![PCB Top](images/PCB_Top.png)            | ![PCB Bottom](images/PCB_Bottom.png)           |
+| ![3D PCB Render](images/3d_sdr.png)    | ![PCB Top](images/top_sdr.png)            | ![PCB Bottom](images/bottom_sdr.png)           |
 
 <p align="center"><b>Figure:</b> 3D render, top, and bottom views of the SDR controller PCB (Altium Designer).</p>
 
@@ -124,7 +124,7 @@ Controller-Hardware-for-SDR-Local-Oscillator-User-Interface/
 
 | Original Schematic                               | Final Schematic                                   |
 |:------------------------------------------------:|:------------------------------------------------:|
-| ![3D PCB Render](images/3D%20PCB%20render.png)   | ![Assembled PCB](images/assembled_pcb.png)       |
+| ![Original Schematic](images/original_schematic.png)   | ![schematic](images/sdr_schematic.png)       |
 <p align="center"><b>Figure:</b> Schematic in first iteration (left) and finalized Altium Schematic (right).</p>
 
 ---

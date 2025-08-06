@@ -3,7 +3,7 @@ _Led a 3-person team and delivered the M2 Technical Review as Team Lead_
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-A robust hardware controller built for **Software-Defined Radio (SDR)** systems, integrating **Local Oscillator (LO) generation**, **TX/RX control**, and a **user interface** to support modular, high-accuracy signal processing.
+A high-performance hardware controller built for **Software-Defined Radio (SDR)** systems, integrating **Local Oscillator (LO) generation**, **TX/RX control**, and a **user interface** to support modular, high-accuracy signal processing.
 
 ---
 
@@ -53,12 +53,40 @@ Once programmed, power the mainboard at 12 VDC, attach your UI module to J7/J8, 
 
 ---
 
+## 📁 Repo Structure
+
+```bash
+Controller-Hardware-for-SDR-Local-Oscillator-User-Interface/
+├── hardware/                # Altium project files & PCB source
+│   ├── SubsystemC.PrjPcb
+│   └── SubsystemC.PrjSch
+├── firmware/                # AVR C source & build scripts
+│   ├── src/
+│   │   ├── main.c
+│   │   ├── si5351.c
+│   │   └── uart_cat.c
+│   ├── include/
+│   └── Makefile
+├── docs/                    # PDF deliverables & slides
+│   ├── ECE295_Team4C_Technical_Design_Doc.pdf
+│   ├── ECE295_Team4C_WD1.pdf
+│   ├── M2_design_review_slides.pdf
+│   └── Team4C_OP1_Slides.pdf
+├── scripts/                 # Test automation & helpers
+│   └── test_lo_accuracy.sh
+├── images/                  # Screenshots used in README
+├── LICENSE
+└── README.md
+```
+
+---
+
 ## Architecture
 
 ![Block Diagram](https://github.com/hyeonjijung1/Past_Project/blob/main/Screenshot%202025-03-08%20204710.png)
 *Figure 1. Subsystem C SDR Block Diagram.*
 
-### 🛠️ PCB Design:
+### PCB Design:
 
 - **3D View:**  
   ![PCB 3D](https://github.com/hyeonjijung1/Past_Project/blob/main/Screenshot%202025-03-07%20235401.png)
@@ -67,11 +95,11 @@ Once programmed, power the mainboard at 12 VDC, attach your UI module to J7/J8, 
 - **Bottom View:**  
   ![PCB Bottom](https://github.com/hyeonjijung1/Past_Project/blob/main/Screenshot%202025-03-07%20235332.png)
 
-### 📜 Schematic:
+### Schematic:
 
 ![Altium Schematic](https://github.com/hyeonjijung1/Past_Project/blob/main/Screenshot%202025-03-08%20003007.png)
 
-## 📂 Supporting Materials
+## Supporting Materials
 
 - 📄 [Technical Design Document (PDF)](https://github.com/hyeonjijung1/Past_Project/raw/main/ECE295_Team4C_Technical_Design_Doc.pdf)  
 - 🧾 [Wire Definitions & ICD Alignment (PDF)](https://github.com/hyeonjijung1/Past_Project/raw/main/ECE295_Team4C_WD1.pdf)  
@@ -79,7 +107,7 @@ Once programmed, power the mainboard at 12 VDC, attach your UI module to J7/J8, 
 - 🎤 [OP1 General Audience Slides (PDF)](https://github.com/hyeonjijung1/Past_Project/raw/main/Team4C_OP1_Slides.pdf)  
 - 🎤 [OP2 General Audience Slides (PDF)](https://github.com/hyeonjijung1/Past_Project/raw/main/Team4C_OP2_Slides.pdf)  
 
-## 🧠 What We Learned
+## What We Learned
 
 - Orchestrating multi-protocol I/O (I²C + UART + GPIO) on a constrained MCU  
 - Achieving tight frequency tolerance within noise and thermal drift margins  
@@ -87,7 +115,7 @@ Once programmed, power the mainboard at 12 VDC, attach your UI module to J7/J8, 
 - PCB routing strategies to isolate analog/RF from noisy digital sections  
 - Leadership: coordinating cross-functional goals, documentation, and presentations under deadline  
 
-## 💬 Contact & Contributors
+## Contact & Contributors
 
 **Lead Engineer & Presenter:**  
 Hyeonji Jung • junghyeonji254@gmail.com  

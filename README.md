@@ -129,6 +129,15 @@ Controller-Hardware-for-SDR-Local-Oscillator-User-Interface/
 
 ---
 
+## Validation & Test Results
+
+Output LO Waveform (10 MHz, Oscilloscope)
+![output](images/Output%20LO%20waveforms%20demonstrating%20correct%20phase%20and%20amplitude.png)
+
+<p align="center"><b>Figure:</b> Measured LO output at 10 MHz on oscilloscope—demonstrates stable, low-jitter signal generation by Si5351A module. Test performed post-assembly.</p>
+
+---
+
 ## Supporting Materials
 
 - 📄 [Technical Design Document (PDF)](https://github.com/hyeonjijung1/Past_Project/raw/main/ECE295_Team4C_Technical_Design_Doc.pdf)  

@@ -113,16 +113,19 @@ Controller-Hardware-for-SDR-Local-Oscillator-User-Interface/
 
 ### PCB Design 
 
-- **3D View:**  
-  ![PCB 3D](https://github.com/hyeonjijung1/Past_Project/blob/main/Screenshot%202025-03-07%20235401.png)
-- **Top View:**  
-  ![PCB Top](https://github.com/hyeonjijung1/Past_Project/blob/main/Screenshot%202025-03-07%20235327.png)
-- **Bottom View:**  
-  ![PCB Bottom](https://github.com/hyeonjijung1/Past_Project/blob/main/Screenshot%202025-03-07%20235332.png)
+| 3D PCB Render                                | Top View                                  | Bottom View                                   |
+|:---------------------------------------------:|:------------------------------------------:|:----------------------------------------------:|
+| ![3D PCB Render](images/3D_PCB_render.png)    | ![PCB Top](images/PCB_Top.png)            | ![PCB Bottom](images/PCB_Bottom.png)           |
+
+<p align="center"><b>Figure:</b> 3D render, top, and bottom views of the SDR controller PCB (Altium Designer).</p>
 
 ### Schematics 
 
-![Altium Schematic](https://github.com/hyeonjijung1/Past_Project/blob/main/Screenshot%202025-03-08%20003007.png)
+
+| Original Schematic                               | Final Schematic                                   |
+|:------------------------------------------------:|:------------------------------------------------:|
+| ![3D PCB Render](images/3D%20PCB%20render.png)   | ![Assembled PCB](images/assembled_pcb.png)       |
+<p align="center"><b>Figure:</b> Schematic in first iteration (left) and finalized Altium Schematic (right).</p>
 
 ---
 

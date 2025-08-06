@@ -142,10 +142,10 @@ Output LO Waveform (10 MHz, Oscilloscope)
 
 ## Supporting Materials
 
--  [Technical Design Document (PDF)](https://github.com/hyeonjijung1/Past_Project/raw/main/ECE295_Team4C_Technical_Design_Doc.pdf)  
--  [M2 Technical Presentation Slides (PDF)](https://github.com/hyeonjijung1/Past_Project/raw/main/M2_design_review_slides.pdf)  
--  [OP1 General Audience Slides (PDF)](https://github.com/hyeonjijung1/Past_Project/raw/main/Team4C_OP1_Slides.pdf)  
--  [OP2 General Audience Slides (PDF)](https://github.com/hyeonjijung1/Past_Project/raw/main/Team4C_OP2_Slides.pdf)  
+-  [Technical Design Document (PDF)]([https://drive.google.com/file/d/1lXBYHzfA1NsGeK7o8hkGUYrSS2hV9RxU/view?usp=sharing])  
+-  [M2 Technical Presentation Slides (PDF)]([https://drive.google.com/drive/u/0/folders/1bPhXOaGDvTHJFP-_4Y7tE-j0aOfVJy6w])
+-  [OP1 General Audience Slides (PDF)]([https://drive.google.com/drive/u/0/folders/1bPhXOaGDvTHJFP-_4Y7tE-j0aOfVJy6w])
+-  [OP2 General Audience Slides (PDF)]([https://drive.google.com/drive/u/0/folders/1bPhXOaGDvTHJFP-_4Y7tE-j0aOfVJy6w])
 
 ---
 

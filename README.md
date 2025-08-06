@@ -150,10 +150,10 @@ Output LO Waveform (10 MHz, Oscilloscope)
 
 ## Supporting Materials
 
--  [Technical Design Document (PDF)]([https://drive.google.com/file/d/1lXBYHzfA1NsGeK7o8hkGUYrSS2hV9RxU/view?usp=sharing])  
--  [M2 Technical Presentation Slides (PDF)]([https://drive.google.com/drive/u/0/folders/1bPhXOaGDvTHJFP-_4Y7tE-j0aOfVJy6w])
--  [OP1 General Audience Slides (PDF)]([https://drive.google.com/drive/u/0/folders/1bPhXOaGDvTHJFP-_4Y7tE-j0aOfVJy6w])
--  [OP2 General Audience Slides (PDF)]([https://drive.google.com/drive/u/0/folders/1bPhXOaGDvTHJFP-_4Y7tE-j0aOfVJy6w])
+- [Technical Design Document (PDF)](https://drive.google.com/file/d/1lXBYHzfA1NsGeK7o8hkGUYrSS2hV9RxU/view?usp=sharing)
+- [M2 Technical Presentation Slides (PDF)](https://drive.google.com/drive/u/0/folders/1bPhXOaGDvTHJFP-_4Y7tE-j0aOfVJy6w)
+- [OP1 General Audience Slides (PDF)](https://drive.google.com/drive/u/0/folders/1bPhXOaGDvTHJFP-_4Y7tE-j0aOfVJy6w)
+- [OP2 General Audience Slides (PDF)](https://drive.google.com/drive/u/0/folders/1bPhXOaGDvTHJFP-_4Y7tE-j0aOfVJy6w)
 
 ---
 

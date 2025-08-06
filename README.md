@@ -37,13 +37,14 @@ This repository contains the design and firmware for **Subsystem C** of a larger
 - Generating a stable, precision **10 MHz LO** for quadrature mixers  
 - **TX/RX gating** via an active-low enable signal  
 - A **front-panel UI** (push-buttons + 16×2 I²C LCD) for frequency tuning and mode switching  
+- **Automated hardware and firmware validation** using Bash and Python test scripts  
 - Full compliance with the course **Interface Control Document (ICD)**  
 
 **Platform:** Custom 2-layer PCB (Altium Designer)  
 **MCU:** ATmega324PB  
 **Clock Generator:** Si5351A (I²C-programmable)  
 **UI:** Push buttons + 16×2 character I²C LCD  
-**Validation Tools:** Oscilloscope, Function Generator  
+**Validation Tools:** Oscilloscope, Function Generator, Bash/Python automation scripts
 
 ---
 

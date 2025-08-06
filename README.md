@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-=======
 # Subsystem C: SDR Controller Hardware  
 _Led a 3-person team and delivered the Technical Review Presentation as Team Lead_
 

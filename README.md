@@ -175,7 +175,7 @@ Output LO Waveform (10 MHz, Oscilloscope)
 [![LinkedIn: Hyeonji Jung](https://img.shields.io/badge/-Hyeonji%20Jung-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://linkedin.com/in/hyeonjijung-uoft)](https://linkedin.com/in/hyeonjijung-uoft)
 
 **Hyeonji Jung**  
-Lead Engineer & Presenter  
+Team Lead & Presenter  
 junghyeonji254@gmail.com
 
 **Contributors:**  

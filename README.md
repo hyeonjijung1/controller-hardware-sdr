@@ -169,13 +169,15 @@ Output LO Waveform (10 MHz, Oscilloscope)
 - Leadership: coordinating cross-functional goals, documentation, and presentations under deadline  
 
 ---
+ 
+## About the Author
 
-## Contact & Contributors
+[![LinkedIn: Hyeonji Jung](https://img.shields.io/badge/-Hyeonji%20Jung-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://linkedin.com/in/hyeonjijung-uoft)](https://linkedin.com/in/hyeonjijung-uoft)
 
-**Lead Engineer & Presenter:**  
-Hyeonji Jung • junghyeonji254@gmail.com  
+**Hyeonji Jung**  
+Lead Engineer & Presenter  
+junghyeonji254@gmail.com
 
 **Contributors:**  
 - Laura Marinescu  
-- Chizaram Amobi-Oleka  
-
+- Chizaram Amobi-Oleka 

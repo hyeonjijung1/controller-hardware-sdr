@@ -6,6 +6,13 @@ _Led a 3-person team and delivered the Technical Review Presentation as Team Lea
 
 A high-performance hardware controller built for **Software-Defined Radio (SDR)** systems, integrating **Local Oscillator (LO) generation**, **TX/RX control**, and a **user interface** to support modular, high-accuracy signal processing.
 
+
+| 3D PCB Render                                   | Assembled PCB                                   |
+|:------------------------------------------------:|:------------------------------------------------:|
+| ![3D PCB Render](images/3D%20PCB%20render.png)   | ![Assembled PCB](images/assembled_pcb.png)       |
+
+<p align="center"><b>Figure:</b> 3D PCB render (left) and fully assembled SDR controller board (right).</p>
+
 ---
 ## Table of Contents
 

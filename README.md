@@ -5,6 +5,9 @@ _Led a 3-person team and delivered the Technical Review Presentation as Team Lea
 **Technologies:**  Altium Designer · PCB Design · Embedded C (AVR) · ATmega324PB · Si5351A (I²C) · UART (CAT Protocol) · I²C LCD Interface · Bash & Python Scripting · Oscilloscope Validation · Git
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![Platform: Custom PCB](https://img.shields.io/badge/platform-Custom--PCB-blue)
+![Language: Embedded C](https://img.shields.io/badge/language-C-blue)
+![Tool: Altium](https://img.shields.io/badge/tool-Altium-yellow)
 
 A high-performance hardware controller built for **Software-Defined Radio (SDR)** systems, integrating **Local Oscillator (LO) generation**, **TX/RX control**, and a **user interface** to support modular, high-accuracy signal processing.
 

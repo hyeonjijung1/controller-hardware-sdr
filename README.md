@@ -81,26 +81,33 @@ Once programmed, power the mainboard at 12 VDC, attach your UI module to J7/J8, 
 
 ```bash
 Controller-Hardware-for-SDR-Local-Oscillator-User-Interface/
-├── hardware/                # Altium project files & PCB source
-│   ├── SubsystemC.PrjPcb
-│   └── SubsystemC.PrjSch
-├── firmware/                # AVR C source & build scripts
-│   ├── src/
-│   │   ├── main.c
-│   │   ├── si5351.c
-│   │   └── uart_cat.c
-│   ├── include/
-│   └── Makefile
-├── docs/                    # PDF deliverables & slides
+├── docs/                     # Project documents & design slides
 │   ├── ECE295_Team4C_Technical_Design_Doc.pdf
-│   ├── ECE295_Team4C_WD1.pdf
 │   ├── M2_design_review_slides.pdf
-│   └── Team4C_OP1_Slides.pdf
-├── scripts/                 # Test automation & helpers
+│   └── Team4C_OP2_Slides.pdf
+├── firmware/                 # Embedded C source & build files
+│   ├── include/              # Header files
+│   │   ├── Si5351.h
+│   │   └── twi.h
+│   ├── src/                  # Source files
+│   │   ├── main.c
+│   │   ├── Si5351.c
+│   │   └── twi.c
+│   └── Makefile
+├── hardware/                 # Altium project files
+│   ├── Controller_Hardware_SDR_sch.SchDoc
+│   └── Controller_Hardware_SDR.PcbDoc
+├── images/                   # Visuals for documentation
+│   ├── 3D PCB render.png
+│   ├── assembled_pcb.png
+│   └── Output LO waveforms demonstrating correct phase and amplitude.png
+├── scripts/                  # Test & automation scripts
+│   ├── cat_test.py
+│   ├── lo_auto_validation.py
 │   └── test_lo_accuracy.sh
-├── images/                  # Screenshots used in README
 ├── LICENSE
 └── README.md
+
 ```
 
 ---

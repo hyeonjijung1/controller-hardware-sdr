@@ -146,4 +146,8 @@ Hyeonji Jung • junghyeonji254@gmail.com
 
 **Contributors:**  
 - Laura Marinescu  
+<<<<<<< HEAD
 - Chizaram Amobi-Oleka  
+=======
+- Chizaram Amobi-Oleka  
+>>>>>>> 4be9171 (WIP: save before rebase)

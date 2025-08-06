@@ -54,7 +54,7 @@ This repository contains the design and firmware for **Subsystem C** of a larger
 
 ```bash
 # Clone the Subsystem C repo
-git clone https://github.com/hyeonjijung1/Controller-Hardware-for-SDR-Local-Oscillator-User-Interface.git
+[git clone https://github.com/hyeonjijung1/controller-hardware-sdr]
 cd Controller-Hardware-for-SDR-Local-Oscillator-User-Interface
 
 # Build firmware
@@ -146,8 +146,5 @@ Hyeonji Jung • junghyeonji254@gmail.com
 
 **Contributors:**  
 - Laura Marinescu  
-<<<<<<< HEAD
 - Chizaram Amobi-Oleka  
-=======
-- Chizaram Amobi-Oleka  
->>>>>>> 4be9171 (WIP: save before rebase)
+

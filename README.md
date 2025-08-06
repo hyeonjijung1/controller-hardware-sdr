@@ -1,5 +1,5 @@
 # Subsystem C: SDR Controller Hardware  
-_Led a 3-person team and delivered the M2 Technical Review as Team Lead_
+_Led a 3-person team and delivered the Technical Review Presentation as Team Lead_
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 

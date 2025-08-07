@@ -24,7 +24,8 @@ A high-performance hardware controller built for **Software-Defined Radio (SDR)*
 ---
 ## Table of Contents
 
-- [Project Summary](#project-summary)  
+- [Project Summary](#project-summary)
+- [Key Design Decisions](#key-design-decisions) 
 - [Key Contributions & Impact](#key-contributions--impact)  
 - [Getting Started](#getting-started)
 - [Repo Structure](#repo-structure) 
@@ -57,6 +58,27 @@ This repository contains the design and firmware for **Subsystem C** of a larger
 
 ---
 
+## Key Design Decisions
+
+Our design focused on intuitive user experience, reliable performance, and seamless integration with modular SDR systems.
+
+- **Intuitive User Interface:**  
+  Implemented three tactile push-buttons and a 16×2 I²C LCD on the front panel, enabling all key SDR controls—frequency tuning, TX/RX switching, and mode selection—without needing a PC or serial commands. This focus on usability makes the controller accessible to both technical and non-technical users.
+
+- **Compact, Modular PCB Layout:**  
+  Designed as a 128 × 51 mm daughtercard to fit within the overall SDR enclosure, supporting easy integration and replacement.
+
+- **RF/Digital Trace Isolation:**  
+  Separated RF signal paths from digital control sections to reduce noise and ensure clean LO generation.
+
+- **Component Selection for Robustness:**  
+  Chose the ATmega324PB microcontroller for ample I/O and the Si5351A for stable, programmable LO generation.
+
+- **Testability and Validation:**  
+  Included accessible test points and supported automated validation with Python/Bash scripts and oscilloscope measurements.
+
+---
+  
 ## Key Contributions & Impact
 
 - **±1 kHz LO stability** (0.01% error) and **90° I/Q phase accuracy** under lab conditions  

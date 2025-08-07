@@ -160,7 +160,7 @@ Real hardware design is never plug-and-play—here’s what we faced and how we 
 | Wrong MCU Orientation (Design/Assembly)                    | Corrected with Jumper Wires                        |
 |:----------------------------------------------------------:|:--------------------------------------------------:|
 | ![MCU wrong orientation in Altium PCB](images/incorrect%20header%20orientation.png) | ![Jumper wires patching MCU orientation](images/pcb%20powered%20mainboard.png) |
-| <sub><b>Figure:</b> PCB as assembled with incorrect MCU orientation—logic chain broken.</sub> | <sub><b>Figure:</b> Functional patch using jumper wires to restore connections after the assembly error.</sub> |
+| <sub><b>Figure:</b> PCB as assembled with incorrect MCU orientation;logic chain broken.</sub> | <sub><b>Figure:</b> Functional patch using jumper wires to restore connections after the assembly error.</sub> |
 
 
 - **Button Instability:**  

@@ -2,6 +2,9 @@
 # Subsystem C: SDR Controller Hardware  
 _Led a 3-person team and delivered the Technical Review Presentation as Team Lead_
 
+> **TL;DR:**  
+> Modular SDR controller featuring custom 2-layer PCB, AVR firmware, and Si5351A frequency generation. Achieves ±1 kHz LO accuracy and 0.5° I/Q phase error—fully validated with oscilloscope and logic analyzer. Built, debugged, and documented from schematic to firmware to hardware bring-up.
+
 **Technologies:**  Altium Designer · PCB Design · Embedded C (AVR) · ATmega324PB · Si5351A (I²C) · UART (CAT Protocol) · I²C LCD Interface · Bash & Python Scripting · Oscilloscope Validation · Git
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -86,7 +89,7 @@ Once programmed, power the mainboard at 12 VDC, attach your UI module to J7/J8, 
 ## 📁 Repo Structure
 
 ```bash
-Controller-Hardware-for-SDR-Local-Oscillator-User-Interface/
+.
 ├── docs/                     # Project documents & design slides
 │   ├── ECE295_Team4C_Technical_Design_Doc.pdf
 │   ├── M2_design_review_slides.pdf
@@ -144,26 +147,26 @@ Controller-Hardware-for-SDR-Local-Oscillator-User-Interface/
 <p align="center"><b>Figure:</b> Schematic in first iteration (left) and finalized Altium Schematic (right).</p>
 
 ---
-##Challenges & Lessons Learned
+## Challenges & Lessons Learned
 
 Real hardware design is never plug-and-play—here’s what we faced and how we solved it:
 
-- Assembly Sequence Error:
-Our initial assembly failed because we soldered through-hole components before the surface-mount parts, making reflow impossible. We corrected this by assembling surface-mount first on our next build.
+- **Assembly Sequence Error:**  
+  Our initial assembly failed because we soldered through-hole components before the surface-mount parts, preventing reflow soldering. We corrected this by assembling surface-mount components first on our next build.
 
-- Microcontroller Orientation Mistake:
-The ATmega324PB was initially mounted in the wrong orientation, misaligning the pinout and breaking the logic chain. To recover, we used jumper wires with male-to-female headers to manually connect the MCU to the correct pads.
+- **Microcontroller Orientation Mistake:**  
+  The ATmega324PB was mounted in the wrong orientation, misaligning the pinout and breaking the logic chain. To recover, we used jumper wires with male-to-female headers to manually connect the MCU to the correct pads—an inelegant but functional patch.
 
-- Button Instability:
-Some push-buttons failed on the PCB despite working on breadboard. The reset button, a different type, worked reliably, pointing to specific hardware quality issues.
+- **Button Instability:**  
+  Some push-buttons failed on the PCB despite working on breadboard. The reset button, a different type, worked reliably, pointing to hardware quality issues.
 
-- TXEN Signal Glitch:
-The TXEN (Transmit Enable) signal toggled incorrectly due to a debounce/logic error in firmware. Despite several software fixes, the issue persisted and would require further debug.
+- **TXEN Signal Glitch:**  
+  The TXEN (Transmit Enable) signal toggled incorrectly due to a debounce/logic error in firmware. Despite several software fixes, the issue persisted and requires further debugging.
 
-- UART Communication Issues:
-Serial comms established, but the MCU sometimes sent incorrect/blank responses. Moving to interrupt-based UART caused repeated interrupts, locking the radio in computer-control mode—an unresolved but valuable learning experience.
+- **UART Communication Issues:**  
+  Serial comms established, but the MCU sometimes sent incorrect/blank responses. Switching to interrupt-based UART caused repeated interrupts, locking the radio in computer-control mode—an unresolved but valuable learning experience.
 
-Key Takeaway:
+**Key Takeaway:**  
 Every challenge forced us to dig deeper, learn new debugging skills, and improvise fixes to keep the project moving forward; real hardware design in a nutshell.
 
 ---
@@ -183,6 +186,7 @@ Output LO Waveform (10 MHz, Oscilloscope)
 <p align="center"><b>Figure:</b> Measured LO output at 10 MHz on oscilloscope. This demonstrates stable, low-jitter signal generation by Si5351A module. Test performed post-assembly.</p>
 
 ---
+
 ## How to Replicate / Order PCB
 
 Interested in building your own Subsystem C SDR Controller? Here’s how:
@@ -190,7 +194,7 @@ Interested in building your own Subsystem C SDR Controller? Here’s how:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/hyeonjijung1/controller-hardware-sdr
-   
+    ```
 2. **Download hardware design files:**  
 - Altium schematic (`.SchDoc`) and PCB (`.PcbDoc`) files are in `/hardware`
 - BOM/parts list can be found in the schematic
@@ -213,7 +217,9 @@ Interested in building your own Subsystem C SDR Controller? Here’s how:
 - Validate LO output on oscilloscope
 - Test push-buttons, TX/RX switching, and serial CAT protocol
 
-> *Tip: Hardware bring-up is never plug-and-play—if you run into issues, check the “Challenges” section above for inspiration!*
+> *Tip: Hardware bring-up is never plug-and-play. If you run into issues, check the “Challenges” section above for inspiration!*
+
+---
 
 ## Supporting Materials
 
@@ -234,7 +240,7 @@ Interested in building your own Subsystem C SDR Controller? Here’s how:
 
 ---
  
-## About the Author
+## Contact & Contributors
 
 [![LinkedIn: Hyeonji Jung](https://img.shields.io/badge/-Hyeonji%20Jung-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://linkedin.com/in/hyeonjijung-uoft)](https://linkedin.com/in/hyeonjijung-uoft)
 

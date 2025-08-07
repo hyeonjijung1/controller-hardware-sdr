@@ -48,7 +48,7 @@ This repository contains the design and firmware for **Subsystem C** of a larger
 - **TX/RX gating** via an active-low enable signal  
 - A **front-panel UI** (push-buttons + 16×2 I²C LCD) for frequency tuning and mode switching  
 - **Automated hardware and firmware validation** using Bash and Python test scripts  
-- Full compliance with the course **Interface Control Document (ICD)**  
+- Full compliance with the **Interface Control Document (ICD)**  
 
 **Platform:** Custom 2-layer PCB (Altium Designer)  
 **MCU:** ATmega324PB  
@@ -95,8 +95,8 @@ Our design focused on intuitive user experience, reliable performance, and seaml
 
 ```bash
 # Clone the Subsystem C repo
-[git clone https://github.com/hyeonjijung1/controller-hardware-sdr]
-cd Controller-Hardware-for-SDR-Local-Oscillator-User-Interface
+git clone https://github.com/hyeonjijung1/controller-hardware-sdr
+cd controller-hardware-sdr
 
 # Build firmware
 make all

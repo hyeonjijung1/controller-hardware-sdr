@@ -27,7 +27,9 @@ A high-performance hardware controller built for **Software-Defined Radio (SDR)*
 - [Repo Structure](#repo-structure) 
 - [Architecture](#architecture)  
 - [PCB Design & Schematics](#pcb-design--schematics)
+- [Challenges & Lessons Learned](#challenges--lessons-learned)
 - [Validation & Test Results](#validation--test-results)
+- [How to Replicate / Order PCB](#how-to-replicate--order-pcb)
 - [Supporting Materials](#supporting-materials)  
 - [What We Learned](#what-we-learned)  
 - [Contact & Contributors](#contact--contributors)
@@ -142,8 +144,38 @@ Controller-Hardware-for-SDR-Local-Oscillator-User-Interface/
 <p align="center"><b>Figure:</b> Schematic in first iteration (left) and finalized Altium Schematic (right).</p>
 
 ---
+##Challenges & Lessons Learned
+
+Real hardware design is never plug-and-play—here’s what we faced and how we solved it:
+
+- Assembly Sequence Error:
+Our initial assembly failed because we soldered through-hole components before the surface-mount parts, making reflow impossible. We corrected this by assembling surface-mount first on our next build.
+
+- Microcontroller Orientation Mistake:
+The ATmega324PB was initially mounted in the wrong orientation, misaligning the pinout and breaking the logic chain. To recover, we used jumper wires with male-to-female headers to manually connect the MCU to the correct pads.
+
+- Button Instability:
+Some push-buttons failed on the PCB despite working on breadboard. The reset button, a different type, worked reliably, pointing to specific hardware quality issues.
+
+- TXEN Signal Glitch:
+The TXEN (Transmit Enable) signal toggled incorrectly due to a debounce/logic error in firmware. Despite several software fixes, the issue persisted and would require further debug.
+
+- UART Communication Issues:
+Serial comms established, but the MCU sometimes sent incorrect/blank responses. Moving to interrupt-based UART caused repeated interrupts, locking the radio in computer-control mode—an unresolved but valuable learning experience.
+
+Key Takeaway:
+Every challenge forced us to dig deeper, learn new debugging skills, and improvise fixes to keep the project moving forward; real hardware design in a nutshell.
+
+---
 
 ## Validation & Test Results
+
+
+| Test                    | Target / Spec        | Result / Measured         | Status   |
+|-------------------------|---------------------|--------------------------|----------|
+| LO Frequency Accuracy   | ±1 kHz @ 10 MHz     | ±1 kHz (oscilloscope)    | ✔️       |
+| I/Q Phase Error         | <1°                 | ~0.5° (measured)         | ✔️       |
+| TX/RX Switching Time    | <2 ms               | ~1 ms (logic analyzer)   | ✔️       |
 
 Output LO Waveform (10 MHz, Oscilloscope)
 ![output](images/Output%20LO%20waveforms%20demonstrating%20correct%20phase%20and%20amplitude.png)
@@ -151,6 +183,37 @@ Output LO Waveform (10 MHz, Oscilloscope)
 <p align="center"><b>Figure:</b> Measured LO output at 10 MHz on oscilloscope. This demonstrates stable, low-jitter signal generation by Si5351A module. Test performed post-assembly.</p>
 
 ---
+## How to Replicate / Order PCB
+
+Interested in building your own Subsystem C SDR Controller? Here’s how:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/hyeonjijung1/controller-hardware-sdr
+   
+2. **Download hardware design files:**  
+- Altium schematic (`.SchDoc`) and PCB (`.PcbDoc`) files are in `/hardware`
+- BOM/parts list can be found in the schematic
+
+3. **Order & fabricate PCB:**  
+- Open PCB in Altium Designer, export Gerber & drill files (`File > Fabrication Outputs > Gerber Files`)
+- Upload Gerbers to a PCB fab (e.g., JLCPCB, PCBWay)
+- Order components from DigiKey, Mouser, or LCSC
+
+4. **Assemble the board:**  
+- Solder **surface-mount** components first (reflow oven recommended), then through-hole parts
+- Double-check microcontroller orientation (refer to schematic/silkscreen)
+
+5. **Build & flash firmware:**  
+- In `/firmware`, run `make all`
+- Flash ATmega324PB using AVRDUDE or compatible programmer
+
+6. **Test your build:**  
+- Power with 12 VDC, connect LCD/UI
+- Validate LO output on oscilloscope
+- Test push-buttons, TX/RX switching, and serial CAT protocol
+
+> *Tip: Hardware bring-up is never plug-and-play—if you run into issues, check the “Challenges” section above for inspiration!*
 
 ## Supporting Materials
 

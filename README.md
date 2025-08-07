@@ -157,7 +157,7 @@ Real hardware design is never plug-and-play—here’s what we faced and how we 
 - **Microcontroller Orientation Mistake:**  
   The ATmega324PB was mounted in the wrong orientation, misaligning the pinout and breaking the logic chain. To recover, we used jumper wires with male-to-female headers to manually connect the MCU to the correct pads—an inelegant but functional patch.
 
-  | Wrong MCU Orientation (Design/Assembly)                    | Corrected with Jumper Wires                        |
+| Wrong MCU Orientation (Design/Assembly)                    | Corrected with Jumper Wires                        |
 |:----------------------------------------------------------:|:--------------------------------------------------:|
 | ![MCU wrong orientation in Altium PCB](images/incorrect%20header%20orientation.png) | ![Jumper wires patching MCU orientation](images/pcb%20powered%20mainboard.png) |
 | <sub><b>Figure:</b> PCB as assembled with incorrect MCU orientation—logic chain broken.</sub> | <sub><b>Figure:</b> Functional patch using jumper wires to restore connections after the assembly error.</sub> |

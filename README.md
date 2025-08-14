@@ -270,11 +270,12 @@ Interested in building your own Subsystem C SDR Controller? Here’s how:
  
 ## Contact & Contributors
 
-[![LinkedIn: Hyeonji Jung](https://img.shields.io/badge/-Hyeonji%20Jung-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://linkedin.com/in/hyeonjijung-uoft)](https://linkedin.com/in/hyeonjijung-uoft)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Hyeonji%20Jung-blue?logo=linkedin)](https://www.linkedin.com/in/dianajung-uoft/)  
+[![Email](https://img.shields.io/badge/Email-dianajunguoftece%40gmail.com-red?logo=gmail)](mailto:dianajunguoftece@gmail.com)
 
-**Hyeonji Jung**  
+
+**Diana(Hyeonji) Jung**  
 Team Lead & Presenter  
-junghyeonji254@gmail.com
 
 **Contributors:**  
 - Laura Marinescu  
